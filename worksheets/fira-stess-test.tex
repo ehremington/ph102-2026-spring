@@ -1,0 +1,35 @@
+\documentclass[letterpaper,12pt]{article}
+
+\input{worksheet-preamble}
+
+
+\begin{document}
+	
+\newcommand{\stressmath}{%
+	\[
+	\alpha+\beta=\gamma,\quad
+	\int_0^\infty e^{-x^2}\,dx=\frac{\sqrt{\pi}}{2},\quad
+	f'(x)=2x,\quad x\in\mathbb{R}
+	\]
+}
+
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+	\textbf{a. mathspec fira (letters/digits/greek)}
+	{\setmainfont{Fira Sans}[Numbers=Tabular]
+		\setmathsfont(Digits,Latin,Greek)[Numbers=Tabular]{Fira Sans}
+		\stressmath}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+	\textbf{b. default math (for contrast)}
+	{\setmainfont{Fira Sans}[Numbers=Tabular]
+		\stressmath}
+\end{minipage}
+
+
+
+\end{document}
+
+
+

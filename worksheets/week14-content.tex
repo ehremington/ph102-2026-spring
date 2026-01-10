@@ -1,0 +1,116 @@
+\week \ covers sections of chapter 24 in the textbook. Topics include:
+
+\begin{itemize}
+	\item compound systems of lenses
+	\item the optics of the eye and corrective lenses
+\end{itemize}
+
+\begin{enumerate}
+\setlength\itemsep{2 in}
+
+\item
+When two or more thin lenses are used in series, an image is formed by the system as a whole, but predicting where based on the geometry of the system can seem daunting. The key to understanding how to approach such a system is to know that each lenses forms an image, and that images formed from a previous lens serve as the object for the next lens. This can obviously become a very tedious problem with many lenses since you have to work a separate image/object problem for each lens, but lets just stick with two for the moment. Lets use two converging lenses of focal lengths $f_1=\SI{+100}{mm}$ and $f_2=\SI{+150}{mm}$ and space them \SI{300}{mm} apart ($s=\SI{300}{mm}$). An object that is \SI{125}{mm} tall and upright is located \SI{400}{mm} from the first lens. Let's start a ray tracing first:
+
+\vspace{6cm}
+
+\begin{enumerate}
+	\setlength\itemsep{1 in}
+	\item Where is the image formed from the first lens only?
+	\item Is this a real or virtual image and is it upright or inverted?
+	\item How far away is this image from the second lens? Is there a \emph{general} equation you can use to find this? Is this a real or virtual object? Is it upright or inverted?
+	\item Where is the image formed as a result of the second lens acting on the first image as an object?
+	\item Is this a real image? Is it upright or inverted?
+	\item What is the magnification from each of these stages and what are the image heights? $m_1=\dfrac{h'_1}{h_1}$ and $m_2=\dfrac{h'_2}{h_2=h'_1}$
+	\item What is the overall magnification? Compare this to the product of the individual magnifications.
+	\item What happens to the final image distance as the lenses get farther apart?
+	\item What happens to the final image distance as the lenses get closer together? Is it possible to get a virtual final image?
+	\item What happens if you get the lenses even closer together? Is it possible to get a virtual object? What is the image when you have a virtual object?
+\end{enumerate}
+
+\newpage
+\item
+Let's apply some of what we have learned to a model of the eye. The typical eye is around \SI{22.5}{mm} in diameter. We will draw a picture of the eye with an object very far away and to the left so that the light is traveling right from the object and into the eye. The cornea and lens of the eye work together to form an image on the retina (which is the inside surface on the right in our drawing). The cornea is a spherical bulge on the surface of the eye that has a radius of curvature of about \SI{8}{mm}. 
+
+\vspace{5cm}
+
+Much of the convergence of light from an object to the retina is actually accomplished by the cornea, rather than the lens, which is for fine adjustment and close objects. In order to model the focusing power of the cornea, we need a slightly different equation that handles images formed by only one spherical surface (in other words half of a lens) where the image is formed \emph{inside the material of the lens.} Here is a picture of what I mean:
+
+\includegraphics[scale=1.1]{figures/singleRefractionSphere.png}
+
+This equation for this:
+\[\frac{n_1}{p}+\frac{n_2}{q}=\frac{n_2-n_1}{R}\]
+where $p$ and $q$ have their usual meaning but $n_1=1$ since in this case it is air and $n_2=1.33$ since the inside of the eye is mostly waterish. 
+
+Now assume that the object is very far away.
+\newcounter{saveenum}
+\begin{enumerate}
+\setlength\itemsep{2 in}
+\item Where would the image be formed if only the cornea is doing any refracting?
+\item Does this image form on the retina of the eye? ($D_{\text{eye}}=\SI{22.5}{mm}$) What else needs to be in the eye?
+\setcounter{saveenum}{\value{enumii}}
+\end{enumerate}\bigskip
+
+So we need additional convergence to make the image be formed exactly on the retina, but the cornea has done a lot of work. 
+
+\begin{enumerate}
+\setcounter{enumii}{\value{saveenum}}
+\setlength\itemsep{2 in}
+\item What focal length would we need from a thin lens that is positioned \SI{5.4}{mm} away from the cornea in order to take the image formed by the cornea alone and instead form the image on the retina?
+\setcounter{saveenum}{\value{enumii}}
+\end{enumerate}\bigskip
+
+The lens in the eye is not symmetric but has a different radius of curvature on each side, and it has an index of refraction $n=1.45$ but it is immersed in the waterishness of the eye and not air, so we need to use the \emph{lens makers equation} to see what focal length of a relaxed lens is:
+
+\[\frac{1}{f} = \frac{\left(n_2-n_1\right)}{n_2}\left(\frac{1}{R_1}-\frac{1}{R_2}\right)\]
+
+But note that a convex radius is positive and a concave radius is negative \emph{when approached from the left to the right}. 
+The left side of the lens has a radius of curvature of \SI{+10}{mm} and the right side of the lens has a radius of curvature of \SI{-6}{mm}. Update your drawing with this info and then work the following problem.
+
+\begin{enumerate}
+	\setcounter{enumii}{\value{saveenum}}
+	\setlength\itemsep{2 in}
+	\item What is the focal length of a lens with this particular geometry?
+\end{enumerate}
+
+\item 
+Now all of that was for an object very far away. The \emph{closest} that people with normal vision can see an object clearly is about \SI{25}{cm}. The cornea's shape does not change but the lens can, so what does the focal length of the lens need to be in order to form and image from this very close object?
+
+\item
+Suppose a person’s cornea and relaxed lens together focus parallel rays of light to a point \SI{4}{mm} in front of the retina. What kind of vision problem does this person have? What kind of corrective lens (converging/diverging) would help, and what focal length would it need if worn \SI{15}{mm} from the eye?
+
+\item BUT, what we did above is working this problem the hard way. Instead, a patient comes to you saying that he can't see farther than he can spit. Which is like \SI{2}{\meter}. So a corrective lens needs to take an object that is farther away than that (take $p_0 = \infty$) and make it appear inside this distance. What is the focal point of such a lens and what is the lens's \emph{focusing power}?
+\bigskip
+
+\item From ChatGPT \textasciitilde \emph{proceed with caution and skepticism} \textasciitilde
+
+A student with mild hyperopia has an eye whose relaxed axial length is \SI{19.5}{mm}.  
+The cornea–lens system behaves just like a normal eye when relaxed (effective focal length \SI{17.0}{mm}) and can accommodate down to \SI{15.5}{mm} when fully flexed.
+
+\begin{enumerate}
+	\setlength\itemsep{1.5in}
+	
+	\item[(a)] \emph{House-keeping}\\
+	For a relaxed eye ($f=\SI{17.0}{mm}$) find where parallel rays are brought to focus relative to the retina. Explain why distant objects still appear sharp.
+	
+	\item[(b)] \emph{Unassisted Near Point}\\
+	When the eye cranks to its shortest focal length ($f=\SI{15.5}{mm}$), what is the closest object distance that can be brought to the retina? Assume the cornea–lens vertex sits \SI{5.4}{mm} in front of the retina.
+	
+	\item[(c)] \emph{Diagnosis}\\
+	A person with normal vision can read comfortably at \SI{25}{cm}. Compare your answer in (b) to this benchmark and classify the severity of the hyperopia.
+	
+	\item[(d)] \emph{Fix-it Lens}\\
+	Glasses are worn \SI{15}{mm} in front of the cornea. What focal length (and power in diopters) must the spectacle lens have so that text at \SI{25}{cm} comes into focus with the eye fully relaxed? Treat the glasses as forming a virtual object for the eye.
+	
+	\item[(e)] \emph{Why “Plus” Lenses Feel Big}\\
+	Using your result from (d), show that the corrective lenses for hyperopia are always converging. Comment on why they make the wearer’s eyes look larger.
+\end{enumerate}
+
+
+\newpage 
+
+\ % The empty page
+
+\newpage
+
+
+\end{enumerate}

@@ -1,0 +1,126 @@
+\week \ covers sections 3,4, and 9 of chapter 23 in the textbook. Topics include:
+
+\begin{itemize}
+	\item refraction and Snell's Law
+	\item dispersion (color separation by a prism)
+	\item total internal reflection and critical angle
+	\item image formation and converging and diverging lenses
+\end{itemize}
+
+\begin{enumerate}
+\setlength\itemsep{2 in}
+
+\item 
+Snell's law relates the angle of incidents and transmission to the indices of refraction of the material. Here is a formula for it:
+\[n_1 \sin \left(\theta_1\right)=n_2 \sin \left(\theta_2\right)\]
+
+Let material 1 be air $n_1=1$ and material 2 be water $n_2 = 1.33$. When light is traveling from air to water at an incident angle of \ang{30}, then what is the transmitted angle? Draw a picture of this. What angle of incidence would make the transmitted angle be \ang{20}? If light were traveling from the water out to the air at an incident angle of \ang{10} what angle would the light take in the air? What if this angle under the water were \ang{20}?
+
+\item
+Make a table of the incident angles and transmitted angles for light traveling from air into water. What angle does the transmitted angle approach? Then revert the direction of light and calculate a table for the light going from water into air. What happens?
+
+\begin{tabular}{ll}
+	air $\,\,$ ->&water\\
+	\toprule
+	$\theta_1$ & $\theta_2$ \\
+	\midrule
+	\midrule
+	\ang{0}& \\
+	\ang{10}& \\
+	\ang{20}&\\
+	\ang{30}&\\
+	\ang{40}&\\
+	\ang{50}&\\
+	\ang{60}&\\
+	\ang{70}&\\
+	\ang{80}&\\
+	\ang{90}&\\
+	\bottomrule
+\end{tabular}\hspace{1.5in}
+\begin{tabular}{ll}
+	water$\,\,$ ->&air\\
+	\toprule
+	$\theta_2$ & $\theta_1$ \\
+	\midrule
+	\midrule
+	\ang{0}& \\
+	\ang{10}& \\
+	\ang{20}&\\
+	\ang{30}&\\
+	\ang{40}&\\
+	\ang{50}&\\
+	\ang{60}&\\
+	\ang{70}&\\
+	\ang{80}&\\
+	\ang{90}&\\
+	\bottomrule
+\end{tabular}
+
+\item
+What you have found is an angle for which the light does not emerge from the material, but rather reflects inside the material. This is known as \emph{total internal reflection} and it is how fiber optic cables work. The angle for which this occurs is known as the \emph{critical angle}. Now use Snell's Law to derive an expression for the critical angle in terms of the index of refraction of the two materials. Be careful about which index of refraction is for the material that the light is in, and which index of refraction that the light \emph{does not} go into.
+
+\item
+What is the critical angle for light in glass surrounded by air? If you surround the glass with water, what does the critical angle become?
+
+\item
+I mentioned in the notes that white light is composed of all the colors in the visible spectrum at once and that the index of refraction of most materials (\emph{slightly}) depends on the frequency of the light itself. Below is a table of three colors and the index of refraction in flint glass. What is the speed of these three wavelengths in flint glass? If light consisting of these colors arrives in a single beam at an incident angle of \ang{30}, then what angle of transmission do each of these colors have?
+
+ \begin{tabular}{lll}
+ 	\toprule
+ 	$\lambda$ (nm) & color & n (flint glass) \\
+ 	\midrule
+ 	\midrule
+ 	486.1 & blue & 1.7328\\
+ 	589.2 & yellow & 1.7205 \\
+ 	656.3 & red & 1.7076 \\
+ 	\bottomrule
+ \end{tabular}
+
+\item
+When light passes through a prism its path changes once on the way into the prism and then again on the way out. Assume the prism is an equilateral triangle of glass ($n=1.5$).
+
+\begin{enumerate}
+	\setlength\itemsep{1 in}
+	\item For an exterior incident angle of \ang{30}, what is the transmitted angle in the prism?
+	
+	\item Inside the prism, what is the \emph{deviation} $\delta_1$ of the light's path?
+	
+	\includegraphics{figures/prismDeviation-1.png}
+	
+	\item What is the interior incident angle as the light is leaving the prism?
+	
+	\includegraphics{figures/prismDeviation-2.png}
+	
+	\item What is the final transmitted angle as the light leaves the prism?
+	
+	\item What is the second deviation of the light's path?
+	
+	\item What is the total deviation of the lights path?
+	
+	\includegraphics{figures/prismDeviation-3.png}
+	
+	\item Using excel or google sheets, do this procedure with many exterior incident angles (all integer angles). Don't forget that excel's trig functions only accept radians and inverse trig functions will return angles in radians so you will have to include some conversion factors in the formula ($\pi \,\, \si{\radian} = \ang{180}$). Plot the total deviation as a function incident angle and see if there are any interesting features.
+	 
+\end{enumerate}
+
+\newpage
+\item
+For a converging lens with a focal length of \SI{+5}{cm}, plot the image distance as a function of object distance. Do a ray tracing for objects at three different object distances, one farther that 2 focal lengths away, one between 1 and 2 focal lengths away, and one less than a focal length away from the lens. 
+
+\newpage
+\item
+Do a ray tracing for a diverging lens with a focal length of \SI{-5}{cm}. 
+
+\item
+In order to magnify an object by 5 times and form a real image with a \SI{100}{mm} focal length lens, where should the object be placed in front of the lens?
+
+\item
+You make a work of art that consists of an object \SI{1}{\meter} away from where you want a real image formed. Where should you place a \SI{10}{cm} lens in order to make the image?
+
+\newpage 
+
+\ % The empty page
+
+\newpage
+
+\end{enumerate}

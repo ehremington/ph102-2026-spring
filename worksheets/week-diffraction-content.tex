@@ -1,0 +1,81 @@
+\week \ covers sections of chapter 25 in the textbook. Topics include:
+
+\begin{itemize}
+	\item double slit interference
+	\item single slit diffraction
+	\item diffraction gratings
+\end{itemize}
+
+\begin{enumerate}
+\setlength\itemsep{2 in}
+
+\item
+Draw a plot of an electromagnetic wave that has a source at the origin, has a wavelength of 4 meters, and arrives at a screen located \SI{20}{m} away with its maximum electric field. At this instant in time, what does this wave look like at the origin?
+
+\includegraphics[scale=1.1]{figures/blank-wave-plot.png}
+
+Now draw in a second wave that has its source at a different place, but begins in exactly the same way the first one does from its source. Where does this wave have to start in to the left of the origin to be completely out of phase with the first and thus destructively interfere? What is the difference in path lengths between the two waves?
+
+Now move the second wave's source so that the waves are in phase with one another. Where does this wave need to start, and what is the difference in path length between the two waves now?
+
+\includegraphics[scale=1.1]{figures/blank-wave-plot.png}
+
+Now imagine that you keep moving the source of the second wave back until you get destructive interference again. What relationship to the wavelength does this difference in path length have? What is a general expression for the difference in path for destructive interference. Repeat this reasoning for constructive interference?
+ 
+\item
+Mathematically a \emph{phase shift} or \emph{phase difference} is a term added inside a sine or cosine wave (or any kind of wave really) that shifts the pattern relative to another wave to the right or to the left. So lets use Excel or Sheets to plot one sin wave with a wavelength of \SI{4}{m} and an amplitude of \SI{2}{\newton/\coulomb} using the function
+\[f(x) = A \sin\left(\frac{2\pi}{\lambda}x\right)\]
+and then plot another function with a phase shift using the function:
+\[g(x) = A \sin\left(\frac{2\pi}{\lambda}x+\Delta\phi\right)\] 
+Where you set $\Delta\phi$ as a cell reference so you can change it later. 
+
+Along with these two plots, also plot the sum of these two functions $f(x) + g(x)$. Now plug in different values of $\Delta\phi$ until you get constructive interference. What value of $\Delta\phi$ is this and what is the amplitude of the combined wave? Now find a value for $\Delta\phi$ that results in destructive interference. What is the amplitude? Now find a value for $\Delta\phi$ that produces neither destructive or constructive interference but rather makes a wave that has exactly the same amplitude at the other two.  
+
+\newpage
+\item
+For a double slit experiment, draw out the schematic of the experiment, with slits $d=\SI{0.01}{mm}$ apart, and a screen \SI{1}{m} away from the slits. According to the notes, the path length difference for coherent light going through the slits depends on the angle $\theta$ measured from the normal angle from the slits. 
+\[\Delta l = d \sin \theta\]
+For constructive interference $\Delta l = m \lambda$ but for destructive interference $\Delta l = (m+\frac{1}{2})\lambda$.
+
+Sketch the locations of the locations of the first 3 maxima for $\lambda=\SI{500}{nm}$. 
+
+\item
+The \emph{small angle approximation} is a very useful trick to simplify the process above. When the screen is very far away from the slits in comparison to the slit separation, then the angles of $\theta$ where we get maxima are very small. Make a table calculating both $\sin \theta$ and $\tan \theta$ for small angles and justify what counts as a ``small'' angle. What simplification does this allow you to make in the above expression for path length difference?
+
+\item
+For the problem above, what is the distance between adjacent maxima. Find this for the three maxima you found but also work it out \emph{in general}.
+
+\item
+Now find the distance between maxima for some other wavelength of light going through these slits. Do higher wavelengths make the maxima closer together or farther apart? 
+
+\item 
+Do the same for the distance between the slits. What effect does this have on the distance between maxima?
+
+\item
+A diffraction grating acts similarly to the double slit experiment, but it has many slits, all even spaced apart from each other. This greatly amplifies the brightness of the spots seen in the double slit experiment while also widening the destructive interference portion between the maxima, leaving very well located spots, but still the same distance apart as if there were two. Diffraction gratings can be made with slits very close together and rather than stating the slit separation, they often state the \emph{slit density} instead, which is the number of slits per unit length.
+
+So if a diffraction grating says that it has \SI{543}{lines/mm}, then how far apart are the individual slits? For green light that has a wavelength of \SI{532}{nm}, what are the angles to the normal that these maxima will appear? How many are there? Will the small angle approximation work here?
+
+
+\item
+Diffraction from a single slit occurs when we consider every single part of the opening as a point source for a spherical wavelet. In this limit where all points are infinitely close together then the pattern takes on a shape characterized by a very bright central peak, with much dimmer maxima to either side of this central peak. In this case, it is easier to write a formula for the locations of the \emph{minima} as opposed to the maxima, so keep in mind that this formula meets the condition for destructive interference only BE VERY CAREFUL THIS IS DECEPTIVELY SIMILAR TO AN EARLIER EQUATION: 
+\[a \sin \theta = m \lambda\]
+I know that this looks like constructive interference (because of the $m \lambda$), but it isn't. Each value of $m$ tells you the location of minima to either side of the central maximum. Another difference here is the meaning of $a$. This is the slit width, not slit separation since in this case there is only one.
+
+Now, use this equation to find the locations of the first three minima for an experiment involving \SI{670}{nm} light and a \SI{0.08}{mm} slit width.
+
+\item
+Apply the small angle approximation to the equation in the previous problem in order to find the location of the minima away from the central maximum, $x$, on a screen $L$ distance away from the slit.
+
+\item
+Now find the \emph{width} of the central peak by finding the distance from the first minima on one side of the center to the first minima on the other side of the center.
+
+
+
+\newpage 
+
+\ % The empty page
+
+\newpage
+
+\end{enumerate}

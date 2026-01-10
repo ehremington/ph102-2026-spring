@@ -1,0 +1,83 @@
+\week \ covers section 7 of chapter 17, the second half of section 6 in chapter 18 about capacitors, and section 10 of chapter 18. Topics include:
+
+\begin{itemize}
+	\item capacitors as energy storage devices
+	\item capacitors in circuits
+	\item circuits with resistors and capacitors called the RC circuit
+\end{itemize}
+
+\begin{enumerate}
+\setlength\itemsep{2 in}
+
+\item
+Draw a capacitor and an electric field within it pointing to the right. What do the equipotential surfaces look like within this capacitor? If the electric field within the capacitor is \SI{500}{N/C} and the capacitor plates are \SI{1}{cm} apart, then what is the voltage between the two plates? Divide this voltage difference into a sensible number of ``steps'' of voltage. Make these the equipotential surfaces and then find the distance between surfaces. Add all of this to your drawing.\hugeskip
+
+
+\item
+Suppose the capacitor plates in the problems above has an area of \SI{0.1}{m^2}. What is the capacitance? How much charge is stored on the capacitor? How much energy is stored in the capacitor?
+
+\item
+Start with the equation for the energy stored in a capacitor and the definition of capacitance, and using substitution derive two other expressions for the energy stored on a capacitor.
+
+\item
+Derive an expression for the energy density of a capacitor. Start with one of the expressions above for the energy of the capacitor and divide it by the volume of the capacitor. Use some clever substitution to get an expression for the energy density of the capacitor in terms of the electric field inside the capacitor. Design you're own capacitor and then determine its energy density. Compare the energy density of your capacitor to that of an Li-ion battery as well as gasoline (use google). 
+
+\item
+Let's throw in one more conceptual idea here. We have assumed that the gap between the plates of a capacitor is vacuum within which the electric field can exist apparently. But if we filled this space with an insulating material, then the capacitance will actually be larger sometimes much larger, depending on the material. Insulating materials are often call \emph{dielectric materials} and have a \emph{dielectric constant} that corresponds to the amount that they increase the capacitance above vacuum. It appears in the parallel plate capacitor formula like this:
+\[C = \kappa \frac{\epsilon_0 A}{d}\]
+Where that constant $\kappa$ is the dielectric constant. It varies in size from 1 (vacuum) and 1.00054 (air) to 3-4 for rubber or even 6000 for barium titanate. This means that with a higher capacitance, more charge can be stored on the capacitor per volt that it is charged with. However, all dielectrics have a limit to how high of an electric field they can withstand before they themselves break down. This is know as the dielectic strength and above this electric field the material becomes a conductor and shorts out the capacitor. You can see this easily in air when a spark from static electricity shocks you. This shock occurs due to a build up of charge that produces an electric field higher than \SI{3}{kV/mm} (for air). There is not really a question here, but we will see this effect in lab.
+
+\item 
+Three capacitors are in series and connected to a \SI{12}{\volt}, \SI{4}{\micro\farad}, \SI{10}{\micro\farad}, and \SI{15}{\micro\farad}. What is the equivalent capacitance of this circuit? How much charge is stored on each capacitor? What is the potential drop across each capacitor? How much energy is stored on each capacitor and what is the total? \hugeskip
+
+\clearpage
+\item
+For the circuit depicted below, find the equivalent capacitance, the charge stored by each capacitor, and the total charge stored.
+
+\includegraphics{figures/sixCapParallel.png}
+
+
+\item
+What is the equivalent capacitance of the circuit below?
+
+\includegraphics{figures/complex-capacitors.png}
+
+\item
+In the above problem, suppose the equivalent capacitance was known (make up a number here) but the capacitance on the far right side was unknown. Using the made up number, what is the unknown capacitor?
+
+\item
+A \SI{6.0}{\micro\farad} capacitor is needed to construct a circuit, but all that is available from the capacitor store is \SI{9.0}{\micro\farad} capacitors. How could you use these to construct a \SI{6.0}{\micro\farad} circuit?
+
+\item
+This is just mean but see if you can solve this puzzle for the equivalent capacitance if all capacitors are \SI{11}{\micro\farad}
+
+\includegraphics[scale=0.6]{figures/mean-capacitors.png}
+
+\item
+Show that the units in the equation for time constant $\tau=RC$ work out.
+
+\item
+A \SI{100}{\volt} battery is connected with an open switch to a \SI{1}{\mega\ohm} resistor and a \SI{1}{\micro\farad} capacitor. When the switch is closed at $t=\SI{0}{\second}$ current flows through the resistor and charge accumulates in the capacitor. What is the initial current in the resistor? What is the initial charge in the capacitor? What is the current in the resistor after a long time has passed? What is the charge in the capacitor after a long time has passed? What is the time constant, $\tau$ of this circuit? What is the current, charge, and voltage across the capacitor after 3 seconds have passed? At what time is the current in the resistor \SI{1}{\micro\ampere}? At what time is the voltage across the capacitor \SI{50}{\volt}? When one time constant worth of time has passed, what is the ratio of the current at that time to the initial current in the resistor?
+
+\clearpage
+\item
+A defibrillator is a way of delivering a large amount of energy in a controlled way to a person's heart to reset the electrical signals that are carefully timed to contract different parts of the heart in a specific order. This discharge is essentially a capacitor and the person's body is a resistor in the pathway between the leads that are in contact with the patient. 
+
+Suppose that a defibrillator has a capacitance of \SI{100}{\micro\farad} and the effective resistance of the body is \SI{300}{\ohm} and the capacitor is initially charged to a voltage of \SI{5}{\kilo\volt}. What is the initial energy stored in the capacitor? What is the initial charge? If the discharge lasts exactly \SI{1}{\milli\second} and is stopped at that time by the other electronics in the device, what is the charge on the capacitor at that time? What is the energy still left in the capacitor? How much energy has been delivered to the patient? 
+
+\clearpage
+\item
+In the circuit below, the current in the \SI{10}{\kilo\ohm} resistor has a value of \SI{10}{\milli\ampere} after \SI{10}{\second} have passed since the switch was closed. What is the time constant of this circuit? What is the equivalent capacitance? What is the value of the unknown capacitor?
+
+\includegraphics[scale=0.6]{figures/complexRC.png}
+
+
+
+
+\newpage 
+
+\ % The empty page
+
+\newpage
+
+\end{enumerate}
